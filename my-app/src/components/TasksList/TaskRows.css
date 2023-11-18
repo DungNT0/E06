@@ -1,0 +1,34 @@
+li {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    border: #00A3FF solid 2px;
+    height: 25px;
+    padding-top: 7px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul button {
+    width: 36px;
+    height: 36px;
+    border: none;
+}
+
+.complete_btn {
+    background-color: #1FF627;
+    background-image: url("../../assets/img/Check_Vector.png");
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+.delete_btn {
+    background-color: red;
+    background-image: url("../../assets/img/Trash_Vector.png");
+    background-repeat: no-repeat;
+    background-position: 10.5px 9px;
+}

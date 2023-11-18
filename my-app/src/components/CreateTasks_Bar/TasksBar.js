@@ -1,8 +1,8 @@
 import React from "react";
 import $ from 'jquery';
-import "./CreateTasksBar.css";
+import "./TasksBar.css";
 
-const CreateTasksBar = () => {
+const TasksBar = () => {
     const handleCreate = () => {
         $(function () {
             // capture click from button
@@ -12,11 +12,11 @@ const CreateTasksBar = () => {
 
             var myInput = $('#my-input').val();
             console.log(myInput);
+            
 
             // ammend content on ID
             $('#nav-menu').append('<div> <li>' + myInput2 + " - " + myInput + '</li>' +
-                '<button class="complete_btn" id="complete_button"></button>'
-                + '<button class="delete_btn" id="delete_button"></button> </div>');
+                '<button class="complete_btn"></button>' + '<button class="delete_btn"></button> </div>');
 
             $(".delete_btn").on('click', function (e) {
 
@@ -42,7 +42,7 @@ const CreateTasksBar = () => {
     }
 
     return (
-        <div className="CreateTasksBar">
+        <div className="TasksBar">
             <div id="my_title">TO DO LIST</div>
 
             <div id="create_tasks_bar">
@@ -52,15 +52,8 @@ const CreateTasksBar = () => {
 
                 <button id="my-button" onClick={handleCreate}>CREATE</button>
             </div>
-
-            <div className="container">
-                <div id="tasks_header">TASKS</div>
-                <ul id="nav-menu">
-
-                </ul>
-            </div>
         </div>
     );
 };
 
-export default CreateTasksBar;
+export default TasksBar;

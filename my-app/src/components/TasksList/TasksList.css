@@ -1,0 +1,33 @@
+div.container {
+    text-align: center;
+}
+
+#tasks_header {
+    color: #00A3FF;
+    font-family: KumarOne-Regular;
+    font-size: 36px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+ul#nav-menu {
+    display: inline-block;
+    color: black;
+    padding: 0px;
+
+}
+
+ul li {
+    display: inline-block;
+    vertical-align: top;
+    background-color: white;
+    border: #00A3FF solid 2px;
+    height: 25px;
+    padding-top: 7px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+ul {
+    list-style-type: none;
+}

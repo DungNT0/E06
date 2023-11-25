@@ -2,6 +2,10 @@ div.container {
     text-align: center;
 }
 
+.container {
+    height: max-content;
+}
+
 #tasks_header {
     color: #00A3FF;
     font-family: KumarOne-Regular;
